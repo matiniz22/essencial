@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#mainindex{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "header header header"
+                         "h1 h1 h1"
+                         "nav nav nav"
+                         "section section section"
+                         "p p p"
+                        "footer footer footer";
+   
+}
+
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:#f1eded;
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    grid-area: header;
+
+}
+
+h1{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    grid-area: h1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+nav{
+    grid-area: nav;
+
+}
+
+ul {
+    list-style: none;
+    width: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    background: white;
+}
+
+a {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: 300ms;
+    font-size: 22px;
+}
+
+a:hover {
+    color: dodgerblue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+li {
+    width: auto;
+    padding: 20px;
+    transition: 300ms;
+}
+
+li:hover{
+    transform: scale(1.2);
+}
+
+.hoverindex:hover{
+    
+    transform: translateY(-3%);
+}
+
+.boxModelImagen{
+    margin-top: 10px;
+    margin-right: 60px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+
+.sectionindex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-area: section;
+}
+
+
+p{
+    text-align: center;
+    color: black;
+    font-family: fantasy;
+    font-size: 25px;
+    grid-area: p;
+}
+
+footer{
+    text-align: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: 300ms;
+    font-size: 22px;
+    grid-area: footer;
+}
+footer:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+/* css remeras*/
+
+
+#mainremeras{
+    width: 100%;
+}
+.conteinercard{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.card{
+    
+    height: 80%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    display: flex;
+    justify-content: center;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+
+}
+.card img{
+    width: 400px;
+    height: 210;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+    text-align: center;
+}
+.card .contenido h3{
+    text-align: center;
+}
+.talles{
+    text-align: center;
+}
+button{
+    text-align: center;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 1px;
+    font-family: fantasy;
+    padding: 2px;
+   
+}
+.comprar{
+    text-align: center;
+    margin-top: 15px;
+    
+    
+}
+button:hover{
+    color: dodgerblue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+    #mainindex{
+        grid-template-areas: "header"
+                         "h1"
+                         "nav"
+                         "section"
+                         "p"
+                         "footer";
+
+    }
+    ul{
+        justify-content: unset;
+    }
+    #mainremeras{
+        width: auto;
+    }
+    .conteinercard{
+        display: flex;
+        flex-direction: column;
+
+    }
+   
+  
+}
