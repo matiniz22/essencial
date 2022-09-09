@@ -33,7 +33,7 @@ h1{
     background-color: white;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     margin: 0px;
     grid-area: h1;
     display: flex;
@@ -195,6 +195,47 @@ button:hover{
 }
 
 
+/* css suscripcion */
+
+.conteinersuscripcion{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+}
+.formulario{
+    background-color: #dbd8d8;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+.inputs{
+    margin: 15px;
+    padding: 5px;
+
+}
+
+
+/*css contacto */
+h2{
+    text-align: center;
+}
+p{
+    margin: 10px;
+    padding: 5px;
+}
+
+.acontacto{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    transition: 300ms;
+    font-size: 22px;
+}
 @media screen and (max-width: 768px){
     #mainindex{
         grid-template-areas: "header"
@@ -217,5 +258,10 @@ button:hover{
 
     }
    
-  
+  .conteinercontacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
 }
