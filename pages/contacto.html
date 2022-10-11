@@ -13,15 +13,13 @@
         <header class="header">Esenciales que todo hombre necesita</header>
         <h1 class="titulo">ESTILO ESENCIAL</h1>
         <nav>
-          <ul class="ulcontacto">
-            <li><a class="acontacto" href="/index.html">Inicio</a></li>
-            <li><a class="acontacto" href="/pages/remeras.html">Remeras</a></li>
-            <li><a class="acontacto" href="/pages/buzos.html">Buzos</a></li>
-            <li><a class="acontacto"href="/pages/joggers.html">Joggers</a></li>
-            <li><a class="acontacto" href="/pages/suscribite.html">Suscribete</a></li>
-           
-          </ul>
-      </nav>
+            <button class="nav-boton" onclick="accion()">Menu</button>
+             <a href="/index.html" class="nav-enlace desaparece">Inicio</a></li>
+             <a href="remeras.html" class="nav-enlace desaparece">Remeras</a></li>
+             <a href="buzos.html"class="nav-enlace desaparece">Buzos</a></li>
+             <a href="joggers.html"class="nav-enlace desaparece">Joggers</a></li>
+             <a href="suscribite.html"class="nav-enlace desaparece">Suscribete</a></li>  
+         </nav>
     <h2>
         Contacto
     </h2>
@@ -31,6 +29,14 @@
     <P>
         Telefono: 1123221417
     </P>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+         function accion(){
+        console.log('esta funcionando mi voton');
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for(var i = 0; i < ancla.length; i++){
+        ancla[i].classList.toggle('desaparece');
+       }
+      }
+    </script>
 </body>
 </html>

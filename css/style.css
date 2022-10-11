@@ -5,20 +5,14 @@
     padding: 0;
 }
 
-#mainindex{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: "header header header"
-                         "h1 h1 h1"
-                         "nav nav nav"
-                         "section section section"
-                         "p p p"
-                        "footer footer footer";
-   
+.conteinerindex{
+    width: 100%;
+    overflow: hidden;
+
 }
 
-header{
+
+header{ 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color:#f1eded;
     color: rgb(66, 66, 66);
@@ -43,7 +37,8 @@ h1{
 }
 
 nav{
-    grid-area: nav;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -52,34 +47,30 @@ ul {
     width: auto;
     margin: 0px;
     display: flex;
+    
     flex-direction: row;
     justify-content:center;
     background: white;
 }
 
-a {
+.nav-enlace{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
+    padding: 10px 30px;
     transition: 300ms;
     font-size: 22px;
+    display: inline-block;
 }
 
-a:hover {
+.nav-enlace:hover {
     color: dodgerblue;
     cursor: pointer;
     border-radius: 5px;
-}
-
-li {
-    width: auto;
-    padding: 20px;
+    transform: scale(1.2);
     transition: 300ms;
 }
 
-li:hover{
-    transform: scale(1.2);
-}
 
 .hoverindex:hover{
     
@@ -159,7 +150,7 @@ footer:hover{
 
 }
 .card img{
-    width: 400px;
+    width: 350px;
     height: 210;
 }
 .card .contenido p{
@@ -176,7 +167,7 @@ footer:hover{
 button{
     text-align: center;
     margin-top: 15px;
-    background-color: white;
+    background-color:white;
     border-radius: 1px;
     font-family: fantasy;
     padding: 2px;
@@ -236,19 +227,35 @@ p{
     transition: 300ms;
     font-size: 22px;
 }
-@media screen and (max-width: 768px){
-    #mainindex{
-        grid-template-areas: "header"
-                         "h1"
-                         "nav"
-                         "section"
-                         "p"
-                         "footer";
 
+.nav-boton{
+    color: black;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+
+}
+@media screen and (max-width: 768px){
+    .conteinerindex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
     }
-    ul{
-        justify-content: unset;
+    .sectionindex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+    .boxModelImagen{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+   
     #mainremeras{
         width: auto;
     }
@@ -263,5 +270,18 @@ p{
     flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .nav-enlace{
+    margin: 10px 0px;
+  }
+  .nav-boton{
+    display: inline-block;
+    font-size: 20px;
+  }
+  .desaparece{
+    display: none;
   }
 }

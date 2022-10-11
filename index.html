@@ -4,30 +4,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Estilo essencial</title>
 </head>
 <body>
-    <div id="mainindex">
+    <div class="conteinerindex">
         <header class="header">Esenciales que todo hombre necesita</header>
         <h1 class="titulo">ESTILO ESENCIAL</h1>
         <nav>
-          <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="./pages/buzos.html">Buzos</a></li>
-            <li><a href="./pages/joggers.html">Joggers</a></li>
-            <li><a href="./pages/suscribite.html">Suscribete</a></li>
-          </ul>
-      </nav>
+          <button class="nav-boton" onclick="accion()">Menu</button>
+           <a href="/index.html" class="nav-enlace desaparece">Inicio</a></li>
+           <a href="/pages/remeras.html" class="nav-enlace desaparece">Remeras</a></li>
+           <a href="./pages/buzos.html"class="nav-enlace desaparece">Buzos</a></li>
+           <a href="./pages/joggers.html"class="nav-enlace desaparece">Joggers</a></li>
+           <a href="./pages/suscribite.html"class="nav-enlace desaparece">Suscribete</a></li>  
+       </nav>
           <section class="sectionindex">
             <div class="hoverindex">
               <a href="/pages/remeras.html"><img src="img/remera negra.webp" alt="" width="300px" height="400px" class="boxModelImagen" ></a>
             </div>
             <div class="hoverindex">
-              <a href="http://www.google.com.ar"><img src="img/joggerazul" alt="" width="300px" height="400px" class="boxModelImagen" ></a>
+              <a href="pages/joggers.html"><img src="img/joggerazul" alt="" width="300px" height="400px" class="boxModelImagen" ></a>
             </div>
-              <a href="http://www.google.com.ar"><img src="img/buzonegro" alt="" width="300px" height="400px" class="boxModelImagen" ></a>
+              <a href="pages/buzos.html"><img src="img/buzonegro" alt="" width="300px" height="400px" class="boxModelImagen" ></a>
             </div>
             
           </section>
@@ -39,8 +39,16 @@
 
           </footer>
     </div>
+    <script>
+      function accion(){
+        console.log('esta funcionando mi voton');
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for(var i = 0; i < ancla.length; i++){
+        ancla[i].classList.toggle('desaparece');
+       }
+      }
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-.
+    </script>
+
 </body>
 </html>
