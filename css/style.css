@@ -113,6 +113,10 @@ footer{
 footer:hover{
     transform: scale(1.2);
 }
+.contacto{
+    color: black;
+    text-decoration: none;
+}
 
 
 
