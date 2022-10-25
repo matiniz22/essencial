@@ -284,8 +284,15 @@ p{
   .nav-boton{
     display: inline-block;
     font-size: 20px;
+    font-family: fantasy;
   }
   .desaparece{
     display: none;
+  }
+  h1{
+    font-family: fantasy;
+  }
+  .parrafo{
+    font-family: fantasy;
   }
 }
