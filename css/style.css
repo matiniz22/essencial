@@ -1,295 +1,199 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-.conteinerindex{
-    width: 100%;
-    overflow: hidden;
-
-}
-
-
-header{ 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:#f1eded;
-    color: rgb(66, 66, 66);
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    grid-area: header;
-
-}
+/* body{
+    height: 100%;
+    background: black;
+} */
 
 h1{
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding: 10px;
-    margin: 0px;
-    grid-area: h1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-
-nav{
     display: flex;
     justify-content: center;
+    background-color: antiquewhite;
 
 }
-
-ul {
-    list-style: none;
-    width: auto;
-    margin: 0px;
+.img{
     display: flex;
-    
-    flex-direction: row;
-    justify-content:center;
-    background: white;
-}
-
-.nav-enlace{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    padding: 10px 30px;
-    transition: 300ms;
-    font-size: 22px;
-    display: inline-block;
-}
-
-.nav-enlace:hover {
-    color: dodgerblue;
-    cursor: pointer;
-    border-radius: 5px;
-    transform: scale(1.2);
-    transition: 300ms;
-}
-
-
-.hoverindex:hover{
-    
-    transform: translateY(-3%);
-}
-
-.boxModelImagen{
-    margin-top: 10px;
-    margin-right: 60px;
-    margin-bottom: 25px;
-    margin-left: 15px;
-}
-
-.sectionindex{
-    display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    grid-area: section;
-}
+    border-radius: 50%;
 
-
-p{
-    text-align: center;
-    color: black;
-    font-family: fantasy;
-    font-size: 25px;
-    grid-area: p;
-}
-
-footer{
-    text-align: center;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    transition: 300ms;
-    font-size: 22px;
-    grid-area: footer;
-}
-footer:hover{
-    transform: scale(1.2);
-}
-.contacto{
-    color: black;
-    text-decoration: none;
-}
-
-
-
-
-
-/* css remeras*/
-
-
-#mainremeras{
-    width: 100%;
-}
-.conteinercard{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
     
-}
-.card{
-    
-    height: 80%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-    display: flex;
-    justify-content: center;
-}
-.card:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-
-}
-.card img{
-    width: 350px;
-    height: 210;
-}
-.card .contenido p{
-    line-height: 1.5;
-    color: #6a6a6a;
-    text-align: center;
-}
-.card .contenido h3{
-    text-align: center;
-}
-.talles{
-    text-align: center;
-}
-button{
-    text-align: center;
-    margin-top: 15px;
-    background-color:white;
-    border-radius: 1px;
-    font-family: fantasy;
-    padding: 2px;
-   
-}
-.comprar{
-    text-align: center;
-    margin-top: 15px;
-    
-    
-}
-button:hover{
-    color: dodgerblue;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-
-/* css suscripcion */
-
-.conteinersuscripcion{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px;
-    padding: 20px;
-    display: grid;
-}
-.formulario{
-    background-color: #dbd8d8;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-
-}
-.inputs{
-    margin: 15px;
-    padding: 5px;
-
-}
-
-
-/*css contacto */
-h2{
-    text-align: center;
-}
-p{
-    margin: 10px;
-    padding: 5px;
-}
-
-.acontacto{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: none;
-    transition: 300ms;
-    font-size: 22px;
-}
-
-.nav-boton{
-    color: black;
-    padding: 10px 0;
-    border: 2px solid #fff;
-    display: none;
-
-}
-@media screen and (max-width: 768px){
-    .conteinerindex{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        
+ 
     }
-    .sectionindex{
-        width: 100%;
+    nav{
         display: flex;
-        flex-direction: column;
         justify-content: center;
+    
     }
-    .boxModelImagen{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-   
-   
-    #mainremeras{
+    
+    ul {
+        list-style: none;
         width: auto;
-    }
-    .conteinercard{
+        margin: 0px;
         display: flex;
-        flex-direction: column;
+        
+        flex-direction: row;
+        justify-content:center;
+        background: white;
+    }
+    
+    .nav-boton{
+        color: black;
+        padding: 10px 0;
+        border: 2px solid #fff;
+        display: none;
+    
+    }
+    .nav-enlace{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        padding: 10px 30px;
+        transition: 300ms;
+        font-size: 22px;
+        display: inline-block;
+    }
+    
+    .nav-enlace:hover {
+        color: dodgerblue;
+        cursor: pointer;
+        border-radius: 5px;
+        transform: scale(1.2);
+        transition: 300ms;
+    }
+    
+    
+    .hoverindex:hover{
+        
+        transform: translateY(-3%);
+    }
+    
+    .conteinerCards{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        
+ 
+    }
+    
+    .card{
+        height: 80%;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        transition: all 400ms ease;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card img{
+       width: 400px;
+       height: 400px;
+       object-fit: fill;
+       border-radius: 10px;
 
     }
-   
-  .conteinercontacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
-  nav{
-    flex-direction: column;
-  }
-  .nav-enlace{
-    margin: 10px 0px;
-  }
-  .nav-boton{
-    display: inline-block;
-    font-size: 20px;
-    font-family: fantasy;
-  }
-  .desaparece{
-    display: none;
-  }
-.parrafo{
-    display: none;
-}
-}
+
+    .card:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+        filter: blur(5px);
+    
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+      }
+      
+      .icono{
+        padding-right: 30px;
+        font-size: 40px;
+      }
+
+      /* css pages bodas */
+
+      .imagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+      }
+      
+      .imagenes img {
+        width: 100%;
+        height: auto;
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+      
+    
+
+
+
+
+
+
+
+
+
+
+    @media (max-width: 900px) {
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+
+        }
+        
+        .nav{
+           flex-direction: column;
+           background-color: #fff;
+        }
+        .desaparece{
+            display: none;
+          }
+        .menu{
+            display: flex;
+            flex-direction: column;
+        }
+        .conteinerCards{
+            display: grid;
+            grid-template-columns: auto;
+            border-radius: 6px;
+        }
+        .nav-boton{
+            display: flex;
+            font-size: 20px;
+            font-family: sans-serif;
+            background-color: #fff;
+            color: cadetblue;
+
+          }
+          .card img{
+            object-fit: fill;
+            border-radius: 20px;
+            
+     
+         }
+         .icono{
+            margin-left: 30px;
+          }
+
+
+          /* mobile bodas */
+
+        .imagenes{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-left: 2px;
+            margin-right: 5px;
+            
+        }
+    }
